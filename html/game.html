@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content ="width=device-width,user-scalable=yes" />
+    
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/app.css"> 
+   
+    <title>Weakest-link</title>
+</head>
+
+<body >
+
+
+
+    <div class="head-div"></div>
+      <header >
+      </header>
+      <img src="../img/Progist Logo White.png" style="height: 80px;opacity:1;position: relative;top:-81px;left:29px;animation: fadeIn 2s;"></img>
+      <h1 style="font-size:36px;font-weight:300;letter-spacing:3px;font-family: 'Montserrat',sans-serif;position: relative;top:-141px;opacity:1;color: white;text-transform: uppercase;animation: fadeIn 2s;">Game</h1>
+   </div>
+    <main>
+
+      <div class="overlay">
+        
+      </div>
+       
+      <div class="container-fluid" >
+
+        <div class="img-question" style="background: rgba(255,255,255,0.5);animation: fadeIn 2s">
+           <img src="../img/ask.png" style="height:480px;width:auto;position: relative;top:30px;left:1px;float: left;"></img>
+         </div>
+        
+         <div id="game" class="game-container">
+            <h2 id="question" >What is the answer to this questions?</h2>
+
+              <input type="radio" id="control_01" name="choice" value="1">
+               <label for="control_01" class="choice-container">
+                <p class="choice-prefix"><span>A<span></p>
+			           <p class="choice-text" data-number="1">Choice 1</p>
+               </label>
+        
+               <input type="radio" id="control_02" name="choice" value="2"  >
+               <label for="control_02" class="choice-container">
+                <p class="choice-prefix"><span>B<span></p>
+                 <p class="choice-text" data-number="2">Choice 2</p>
+               </label>
+
+               <input type="radio" id="control_03" name="choice" value="3"  >
+               <label for="control_03" class="choice-container">
+                <p class="choice-prefix"><span>C<span></p>
+                 <p class="choice-text" data-number="3">Choice 3</p>
+               </label>
+
+
+                <!--new choice-->
+
+
+
+                <!-------------->
+
+            <button class="btn" id="confirm" data-toggle="modal" data-target="#myModal" data-backdrop="static" data-keyboard="false">Confirm</button>
+          </div>
+          
+         <div class="scoretracker" style="animation: fadeIn 2s">
+          
+          <ul class="chart-skills">
+            <li>
+              <span></span>
+            </li>
+             <li>
+              <span></span>
+            </li>
+            <li>
+              <span></span>
+            </li>
+            <li>
+              <span></span>
+            </li>
+            <li>
+              <span></span>
+            </li>
+          </ul> 
+             <div id='pointer'></div>
+             <div class="base"></div>
+         </div> 
+           
+           <div class="modal fade" id="myModal" role="dialog" >
+            <div class="modal-dialog">
+             <div class="modal-content">
+              <img src="" id="modal-image" style="height:370px;"></img>
+              <p id="modal-text"></p>
+              <button class="btn" id="continue" data-dismiss="modal" data-toggle="modal" data-target='' data-backdrop="static" data-keyboard="false">Continue</button>
+             </div>
+            </div>
+          </div>
+
+          <div id="game_over" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+            <div class="modal-content pa_go">
+              <p style="font-size:35px;position: relative;top:20px;" >GAME OVER</p>
+              <p id="score"></p>
+              <button class="btn" id="play_again" data-dismiss="modal" ata-toggle="modal" data-target='' data-backdrop="static" data-keyboard="false">Play Again</button>
+            </div>
+           </div> 
+          </div> 
+          
+          
+
+
+
+      </div> 
+    </main>
+    
+
+    <footer >
+    <div class="footer-copyright text-center py-3" style="font-weight: 700;">
+      <a href="https://www.progist.net/" style="color: white; font-weight: 500;"> © Copyright ProgIST Solutions. All Rights Reserved</a>
+    </div>
+    </footer>   
+
+
+
+
+<script src="../js/game.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
